@@ -5,3 +5,12 @@ repos:
     rev: 5dad3da0007caf4fa9cb40c93bd95fff698a7031
     hooks:
     -   id: trivyfsall
+    -   id: trivyfs
+        args:
+            - .
+    -   id: trivy
+        args:
+            - fs
+            - --exit-code
+            - "1"
+            - .
