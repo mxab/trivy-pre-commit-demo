@@ -1,0 +1,7 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+repos:
+-   repo: https://github.com/mxab/trivy
+    rev: 5dad3da0007caf4fa9cb40c93bd95fff698a7031
+    hooks:
+    -   id: trivyfsall
