@@ -7,6 +7,6 @@ repos:
     -   id: trivyfsall
         args:
             - --skip-files=.git
-    -   id: trivyfs
-        args:
-            - .
+    # -   id: trivyfs
+    #     args:
+    #         - .
