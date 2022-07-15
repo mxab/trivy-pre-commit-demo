@@ -2,11 +2,8 @@
 # See https://pre-commit.com/hooks.html for more hooks
 repos:
 -   repo: https://github.com/mxab/trivy
-    rev: eb31ef229cbd1ed76b7e2becc6bec0614240e389
+    rev: 4bc64b8ed615e366a18f7aa4c59ce96ddfb541c4
     hooks:
-    -   id: trivyfsall
+    -   id: trivyfs
         args:
-            - --skip-files=.git
-    # -   id: trivyfs
-    #     args:
-    #         - .
+            - .
