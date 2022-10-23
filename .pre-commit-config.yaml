@@ -2,8 +2,8 @@
 # See https://pre-commit.com/hooks.html for more hooks
 repos:
 -   repo: https://github.com/mxab/trivy
-    rev: 4bc64b8ed615e366a18f7aa4c59ce96ddfb541c4
+    rev: ec60db3eca5500981a40f955422c7c12d5d37cd9
     hooks:
-    -   id: trivyfs
+    -   id: trivyfs-docker
         args:
             - .
