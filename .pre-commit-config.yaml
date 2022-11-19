@@ -1,12 +1,9 @@
 # See https://pre-commit.com for more information
 # See https://pre-commit.com/hooks.html for more hooks
 repos:
--   repo: https://github.com/mxab/trivy
-    rev: a3bd2a1f4bebbca9ea9f1c0f2301875bfe0d9b19
+-   repo: https://github.com/mxab/pre-commit-trivy
+    rev: 3add6e3bc025c7083b52eed7d106d3441f7afbee
     hooks:
-    -   id: trivyfs-go
-        args:
-            - .
     -   id: trivyfs-docker
         args:
             - .
