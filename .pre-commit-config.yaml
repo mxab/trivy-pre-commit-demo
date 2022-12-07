@@ -1,10 +1,13 @@
 # See https://pre-commit.com for more information
 # See https://pre-commit.com/hooks.html for more hooks
 repos:
--   repo: https://github.com/mxab/pre-commit-trivy.git
-    rev: v0.2.0
+-   repo: ../pre-commit-trivy
+    rev: 3dfc9a9f8133ae538dfbbe3379dab18545d943f0
+
+
     hooks:
     -   id: trivyfs-docker
+        verbose: true
         args:
           - --skip-dirs
           - ./tests
